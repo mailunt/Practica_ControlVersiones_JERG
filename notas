@@ -1,0 +1,22 @@
+1. Clonar & Configurar
+git clone (url-repo) 
+cd mi-proyecto-web
+python -m venv venv source
+venv/bin/activate
+pip install -r requirements.txt
+
+2. Crear rama de trabajo
+git checkout -b feature/modulo-web
+#Trabajar en codigo
+index.html / app.python
+
+3. Commits & Push Remoto
+git add .
+git commit -m "feat: agrega interfaz web #3"
+git push origin main feature/modulo-web
+
+4. Sincronizar y Resolver
+git checkout main
+git pull origin main
+git merge feature/modulo-web
+#Resolver conflictos si existen
